@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>devChallenges.io | Minimal Blog Card</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+
+      :root{
+
+        --pill-text-color: #7C19EE;
+        --pill-bg-color: #F2EAFD;
+        --shadow-color: #E5EAF0;
+        --card-bg-color: #FAFAF9;
+        --primary-bg-color: #FFFFFF;
+        --card-primary-text-color: #20293A;
+        --card-secondary-text-color: #394150;
+
+      }
+
+      @font-face {
+        font-family: "Sora";
+        src: url("fonts/Sora-VariableFont_wght.ttf");
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Sora;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .card{
+        margin-top: 50%;
+        transform: translateY(-50%);
+        width:fit-content;
+        background-color: var(--primary-bg-color);
+        display:flex;
+        flex-direction: column;
+        padding: 0rem 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1.25rem;
+        border-radius: .75rem;
+        gap: 1rem;
+        box-shadow: 5px 5px 20px var(--shadow-color);
+      }
+
+      .card-pill{
+        background-color: var(--pill-bg-color);
+        color: var(--pill-text-color);
+        width:fit-content;
+        padding: 0.25rem 1rem;
+        font-size: 0.7rem;
+        line-height: 1.25;
+        border-radius: 1rem;
+      }
+
+      .card-content{
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+      }
+
+      .card-content h1{
+
+        font-size: 1.15rem;
+      }
+
+      .card-content p{
+        color: var(--card-secondary-text-color);
+        width: 30ch;
+        font-size: 0.85rem;
+        line-height: 1.4;
+        padding-bottom:1rem;
+        /*border-bottom: 1px solid var(--shadow-color);*/
+      }
+      .divider{
+        background-color: var(--shadow-color);
+        height: 1px;
+        width: auto;
+        
+        margin: 0 -1rem 0 -1rem;
+      }
+
+      .card-author{
+
+        font-size: .75rem;
+        color: var(--card-secondary-text-color);
+        font-weight:500;
+      }
+      
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "card">
+      <div class="card-img-wrapper">
+        <img class="card-img"
+        src="resources/Cactus.jpg"
+        alt="image of a cactus">
+      </div>
+
+      <div class="card-pill">
+        <b>Design</b>
+      </div>
+
+      <div class="card-content">
+        <h1>Embracing Minimalism</h1>
+        <p>From minimalist sculptures to minimalist paintings,
+           this blog will inspire you to appreciate the beauty that lies in simplicity.</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="card-author">
+        Annie Spratt
+      </div>
+    </div>
+    <div class="author-info">
+      Coded by <a href="#">Josip Budrovčan</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
